@@ -1,0 +1,44 @@
+package otpractice;
+
+public class day2Functionclass {
+	static float func1(float a, float b) {
+		return a*b;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(func1(2.6f, 5.2f));
+	}
+
+}
+
+package otpractice;
+
+public class day2Functionclass {
+	static void func1(float a, float b, float c) {
+		c = a*b;
+		System.out.print(c);
+	}
+
+	public static void main(String[] args) {
+		func1(2.6f, 5.2f, 0);
+	}
+}
+
+package otpractice;
+
+public class day2Functionclass {
+	static int sum(int a, int b) {
+		return a+b;
+	}
+	static double sum(double a, double b) {
+		return a+b;
+	}
+
+	public static void main(String[] args) {
+		int c = sum(1,2);
+		double d = sum(2,3);
+		
+		System.out.println("int sum "+c);
+		System.out.println("double sum "+d);
+	}
+}
