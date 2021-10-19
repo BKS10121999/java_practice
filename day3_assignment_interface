@@ -1,0 +1,58 @@
+package otpractice;
+
+public interface Polygon 
+{
+	  public static final int sqside = 5,length = 4,breadth = 8, Base=3,Height=5;
+	  public void getName();
+	  public void getArea();
+	  
+	  public static void main(String[] args)
+	  {
+	    Rectangle rectangle = new Rectangle();
+	    Triangle triangle = new Triangle();
+	    Square square = new Square();
+	    
+	    rectangle.getName();
+	    rectangle.getArea();
+	    
+	    square.getName();
+	    square.getArea();
+	    
+	    triangle.getName();
+	    triangle.getArea();
+	  }
+	}
+
+	class Rectangle implements Polygon
+	{
+	  public void getName()
+	  {
+	    System.out.println("The name of the Polygon is: Rectangle");
+	  }
+	  public void getArea()
+	  {
+	    System.out.println("The Area of Rectangle is: " +length*breadth);
+	  }
+	}
+	class Square implements Polygon
+	{
+	  public void getName()
+	  {
+	    System.out.println("\nThe name of the Polygon is: Square");
+	  }
+	  public void getArea()
+	  {
+	    System.out.println("The Area of Square is: " +sqside * sqside);
+	}
+	class Triangle implements Polygon
+	{
+	  public void getName()
+	  {
+	    System.out.println("The name of the Polygon is: Triangle");
+	  }
+	  public void getArea()
+	  {
+	    System.out.println("The Area of Triangle is: " +0.5*Base*Height);
+	  }
+	}
+}
