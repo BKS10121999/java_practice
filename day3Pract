@@ -1,0 +1,347 @@
+package otpractice;
+
+public class ClassExample{
+	
+	ClassExample(){
+	int id;
+	String name;
+	System.out.println("its working");
+	}
+
+	public static void main(String[] args) {
+		ClassExample c1 = new ClassExample();
+		
+
+	}
+
+}
+
+
+
+package otpractice;
+
+public class ClassExample{
+	
+	ClassExample(String name,int id){
+	System.out.println("id= "+id);
+	System.out.println("name= "+name);
+	}
+
+	public static void main(String[] args) {
+		ClassExample c1 = new ClassExample("bahar", 4668);
+	}
+
+}
+
+
+
+package otpractice;
+
+public class ClassExample{
+	                                                                       // constructor overloading
+	
+	int id;
+	int age;
+	String name;
+	
+	ClassExample(int eid, int a, String n){
+		id=eid;
+		age=a;
+		name=n;
+	}
+	
+	ClassExample(int eid, int a){
+		id=eid;
+		age=a;
+	}
+	
+	void ClassExampledisp() {
+		System.out.println("eid= "+id);
+		System.out.println("age= "+age);
+		System.out.println("name= "+name);
+	}
+	public static void main(String[] args) {
+		ClassExample c1 = new ClassExample(445,58,"jdj");                                       //c1 and c2 are objects
+		c1.ClassExampledisp();
+		ClassExample c2 = new ClassExample(999,54,"jfkh");
+		c2.ClassExampledisp();
+		
+	}
+
+}
+
+
+
+
+
+package otpractice;
+
+public class ClassExample{
+	// constructor overloading
+	
+	int id;
+	int age;
+	String name;
+	
+	ClassExample(int id, int age, String name){					// use of this keyword
+		this.id=id;
+		this.age=age;
+		this.name=name;
+	}
+	
+	ClassExample(int eid, int a){
+		id=eid;
+		age=a;
+	}
+	
+	void ClassExampledisp() {
+		System.out.println("eid= "+id);
+		System.out.println("age= "+age);
+		System.out.println("name= "+name);
+	}
+	public static void main(String[] args) {
+		ClassExample c1 = new ClassExample(445,58,"jdj");
+		c1.ClassExampledisp();
+		ClassExample c2 = new ClassExample(999,54);
+		c2.ClassExampledisp();
+		
+	}
+
+}
+
+
+
+
+
+package otpractice;
+
+public class ClassExample{
+	// constructor overloading
+	
+	int id;
+	int age;
+	String name;
+	
+	ClassExample(int i, int a, String n){					// use of this keyword
+		id=i;
+		age=a;
+		name=n;
+	}
+	
+	ClassExample(int eid, int a){
+		id=eid;
+		age=a;
+	}
+	
+	void ClassExampledisp() {
+		System.out.println("eid= "+id);
+		System.out.println("age= "+age);
+		System.out.println("name= "+name);                                //using this keyword to use other func
+	}
+	void ClassExampledisp2() {
+		this.ClassExampledisp();
+	}
+	public static void main(String[] args) {
+		ClassExample c1 = new ClassExample(445,58,"jdj");
+		c1.ClassExampledisp2();
+		
+	}
+
+}
+
+
+
+
+package otpractice;
+
+public class ClassExample{
+	// constructor overloading
+	
+	int id;
+	int age;
+	String name;
+	
+	ClassExample() {
+		
+	}
+	
+	ClassExample(int id, int age, String name){	
+		this();
+		this.id=id;
+		this.age=age;
+		this.name=name;
+	}
+	
+	ClassExample(int eid, int a){
+		id=eid;
+		age=a;
+	}
+	
+	void ClassExampledisp() {
+		System.out.println("eid= "+id);
+		System.out.println("age= "+age);
+		System.out.println("name= "+name);
+	}
+	void ClassExampledisp2() {
+		this.ClassExampledisp2();
+	}
+	public static void main(String[] args) {
+		ClassExample c1 = new ClassExample(445,58,"jdj");
+		c1.ClassExampledisp();
+
+		
+	}
+
+}
+
+
+
+
+
+package otpractice;
+
+public class ClassExample{
+	protected String name = "harry";
+	public void fun1() {
+		System.out.println("harry is fnc1");
+	}
+
+	public static void main(String[] args) {
+		Class1 c3=new Class1();
+		Class1 c4=new Class1();
+		c3.salary = 848475;                                         //example of inheritance
+		c3.fun1();
+		System.out.println(c3.salary);
+		c4.salary = 84875;
+		c4.fun1();
+		System.out.println(c4.salary);
+	}
+}
+
+class Class1 extends ClassExample{
+	int salary = 20000;
+}
+
+
+
+
+package otpractice;
+
+public class ClassExample{
+	int salary = 30303;
+	public static void main(String[] args) {                  //inheritance
+		emp2 e1 = new emp2();
+		System.out.println(e1.salary);
+		System.out.println(e1.id);
+	}
+}
+
+class emp2 extends ClassExample{
+	int id = 101;
+}
+
+
+
+
+package otpractice;
+
+public class ClassExample{
+	int salary = 30303;
+	public static void main(String[] args) {                      
+		emp2 e1 = new emp2();
+		System.out.println(e1.salary);
+		System.out.println(e1.id);
+		
+		emp3 e2 = new emp3();                                             //multiple inheritance
+		System.out.println(e2.salary);
+		System.out.println(e2.id);
+	}
+}
+
+class emp2 extends ClassExample{
+	int id = 101;
+}
+
+class emp3 extends emp2{
+}
+
+
+
+
+package otpractice;
+
+public class ClassExample{
+	int salary = 30303;
+	public static void main(String[] args) {
+		emp2 e1 = new emp2();
+		System.out.println(e1.salary);
+		System.out.println(e1.id);
+		
+		emp3 e2 = new emp3();
+		System.out.println(e2.salary);
+		System.out.println(e2.id);
+		e2.fun1();
+	}
+}
+
+class emp2 extends ClassExample{
+	void fun1() {
+		System.out.println("this is child class");                        //chiild class function is overriding
+	}
+	int id = 101;
+}
+
+class emp3 extends emp2{
+}
+
+
+
+
+
+package otpractice;
+
+abstract class vehicle {
+	public abstract void drive();
+	
+	public void fun1() {
+		System.out.println("hshs");                                         //abstraction
+	}
+	
+
+	public static void main(String[] args) {
+		driver d = new driver();
+		d.drive();
+		d.fun1();
+	}
+}
+
+class driver extends vehicle{
+	public void drive() {
+		System.out.println("child");	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
