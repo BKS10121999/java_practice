@@ -1,0 +1,91 @@
+package otpractice;
+
+public class Enumclass {                                                    //enum inside a class
+	enum Grade{
+		First,
+		Second,
+		Third
+	}
+
+	public static void main(String[] args) {
+		Grade g=Grade.Third;
+		System.out.println(g);
+	}
+
+}
+
+
+
+package otpractice;
+
+public class Enumclass {
+	enum Grade{
+		First,
+		Second,
+		Third
+	}
+
+	public static void main(String[] args) {                          //for loop to access all values in enum
+		for(Grade g: Grade.values()) {
+			System.out.println(g);
+		}
+	}
+}
+
+
+
+
+package otpractice;
+import java.util.Scanner;
+
+public class User1 {
+
+	public static void main(String[] args) {                            //user input
+		Scanner obj = new Scanner(System.in);
+		System.out.println("enter a line");
+		
+		String line = obj.nextLine();
+		System.out.println("user entered "+line);
+	}
+}
+
+
+
+
+
+package otpractice;
+import java.util.Scanner;
+
+public class User1 {
+
+	public static void main(String[] args) {
+		Scanner obj = new Scanner(System.in);                       //inputs of different datatypes
+		System.out.println("enter a line");
+		
+		String line = obj.nextLine();
+		System.out.println("user entered "+line);
+		
+		System.out.println("enter age");
+		int age = obj.nextInt();
+		System.out.println("age entered "+age);
+		
+		System.out.println("enter height");
+		float height = obj.nextFloat();
+		System.out.println("height entered "+height);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
