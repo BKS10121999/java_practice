@@ -1,0 +1,118 @@
+import java.util.*;  
+public class Day5_assignment{  
+public static void main(String[] args) {  
+
+  Deque<String> deque = new ArrayDeque<String>();                       //ArrayDequeue
+  deque.add("bharath");  
+  deque.add("chandan");  
+  deque.add("sujay"); 
+  deque.add("door");  
+
+
+    for (String str : deque) {  
+      System.out.println(str);  
+      }  
+   }  
+}
+
+
+
+
+
+import java.util.*;  
+public class Day5_assignment{  
+public static void main(String args[]){  
+
+  ArrayList<String> list=new ArrayList<String>();   
+                                                                           //ArrayList
+  list.add("doom");
+  list.add("ding");  
+  list.add("dog");  
+  list.add("dare");  
+  list.add("door");  
+
+
+    Iterator itr=list.iterator();  
+    while(itr.hasNext()){  
+    System.out.println(itr.next());  
+    }  
+  }  
+}  
+
+
+
+
+
+import java.util.*;  
+public class Day5_assignment{  
+  public static void main(String args[]){ 
+  
+    LinkedList<String> al=new LinkedList<String>();                         //LinkedList
+    
+      al.add("doom");  
+      al.add("dare");  
+      al.add("dog");  
+      al.add("door");  
+      
+      Iterator<String> itr=al.iterator();  
+      while(itr.hasNext()){  
+        System.out.println(itr.next());  
+      }  
+   }  
+}  
+
+
+
+
+
+import java.util.*;  
+public class Day5_assignment{  
+  public static void main(String args[]){  
+  
+    Vector<String> v=new Vector<String>();                                  //Vector
+    
+    v.add("tree");  
+    v.add("leaf");  
+    v.add("boat");  
+    v.add("dog");
+    v.add("deer");
+    
+    Iterator<String> itr=v.iterator();  
+    while(itr.hasNext()){  
+      System.out.println(itr.next());  
+    }  
+  }  
+} 
+
+
+
+
+
+
+import java.util.*;  
+public class Day5_assignment{  
+  public static void main(String args[]){  
+    Vector<String> v=new Vector<String>();  
+    
+    v.add("haha");  
+    v.add("ytut");  
+    v.add("lggjf");  
+    v.add("ngngn");  
+    
+    Iterator<String> itr=v.iterator();  
+    while(itr.hasNext()){  
+      System.out.println(itr.next());
+      }  
+      
+    queue.remove();  
+    queue.poll();  
+    System.out.println("after removing two elements:");   
+                                                                                //PriorityQueue
+    Iterator<String> itr2=queue.iterator();  
+    while(itr2.hasNext()){  
+      System.out.println(itr2.next());  
+      }  
+   }  
+} 
+
+
